@@ -1,8 +1,89 @@
-/* example class names */
-h1 {
-    color: blueviolet;
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.button__send {
+
+/* header */
+.header {
+    background: #f1f1f1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+.header__img {
+    width: 150px;
+    height: 40px;
+}
+
+/* section hero images with four images*/
+.hero { 
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+    background-size: cover; 
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url('../images/background__hero--kids1.png');
+    animation: banner 28s infinite linear; /* linear: linear velocity */
+}
+.hero__container {
+    width: 100%;
+    height: 100%;
+    /* padding: 8px; mobile */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.hero__container--color span {
+    color: #f778b9;
+}
+.hero__container--fontSize {
+    font-size: 20px;
+}
+.hero__container--fonts {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+/* 
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; 
+*/
+@keyframes banner { 
+    0% {
+        background-image: url('../images/background__hero--kids1.png');
+    }
+    25% {
+        background-image: url('../images/background__hero--kids1.png');
+    }
+    26% {
+        background-image: url('../images/background__hero--kids2.png');
+    }
+    50% {
+        background-image: url('../images/background__hero--kids2.png');
+    }
+    51% {
+        background-image: url('../images/background__hero--kids3.png');
+    }
+    75% {
+        background-image: url('../images/background__hero--kids3.png');
+    }
+    76% {
+        background-image: url('../images/background__hero--kids4.png');
+    }
+    100% {
+        background-image: url('../images/background__hero--kids4.png');
+    }
+}
+
+/* .button__send {
 
 }
 .button__send:hover {
@@ -15,4 +96,4 @@ h1 {
 
 .button__send--form {
 
-}
+} */
