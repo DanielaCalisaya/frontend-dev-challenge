@@ -86,7 +86,8 @@ font-family: 'Source Sans Pro', sans-serif;
 /* section with image and paragraph */
 .section {
     display: flex;
-    text-align: center;
+    text-align: center; 
+    justify-content: center;
     padding: 40px 10px;
     background-color: #e4e4e4;
 }
@@ -101,6 +102,81 @@ font-family: 'Source Sans Pro', sans-serif;
     margin-top: 30px; 
     font-family: 'Source Sans Pro', sans-serif;
 } 
+
+/* article with image and faq accordion, includes advertisings */
+.article {
+    background-color: #e4e4e4;
+    justify-content: center;
+}
+.article__container__advertising {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 40px;
+    text-align: center; 
+}
+.article__container__advertising a img { /* dentro de una a? */
+    align-items: center;
+    max-width: 90%; 
+    margin: 10px 0;
+}
+.article__container {
+    margin-bottom: 50px;  /*  */
+    max-width: 700px;
+}
+.article__container__epigraph {
+    background-color: rgb(194, 156, 211);
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* FAQ accordion */
+.article__container__faq {
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 0 15px; 
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.article__container__faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article__container__faq__question h4 {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 16px;
+}
+.article__container__faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    /* The overflow is clipped, and the rest of the content will be invisible */
+    transition: max-heigth 1.4s ease;
+}
+.article__container__faq__answer h3 {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 20px;
+    color: #486db7;
+    padding-top: 10px;
+}
+.article__container__faq__answer p {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 18px;
+}
+.article__container__faq__answer p span {
+    color: #b378ff;
+}
+.article__container__faq.active .article__container__faq__answer {    
+    max-height: 80%; 
+}
+.article__container__faq.active i.fas {      
+    transform: rotate(180deg);
+}
+i.fas {
+    transition: transform 0.4s ease-in;
+}
 
 /* .button__send {
 
@@ -120,6 +196,7 @@ font-family: 'Source Sans Pro', sans-serif;
 /* MEDIA QUERY - 768 px */
 @media(min-width: 768px) {
 
+    /* section with image and paragraph */
     .section {
         padding: 50px 20px;
     }
@@ -143,5 +220,23 @@ font-family: 'Source Sans Pro', sans-serif;
         display: flex;
         align-items: center;
     } 
+    /* article with image and faq accordion, includes advertisings */
+    .article {
+        display: flex;
+        flex-direction: row;
+    }
+    .article__container__advertising {
+        order: 2;
+    }
+    .article__container {
+        order: 1;
+        padding-left: 20px; 
+    }
+    .article__container__advertising a img {
+        margin: 0;
+    }
+    .article__container__advertising--margin {
+        margin-top: 30px;
+    }
 
 } 
