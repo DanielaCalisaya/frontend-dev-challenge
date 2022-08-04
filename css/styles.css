@@ -239,20 +239,6 @@ img.article__container__illustration {
     background-color: #b378ff;
     height: 300px;
 }
-/* .button__send {
-
-}
-.button__send:hover {
-  
-}
-
-.button__send--news {
-
-}
-
-.button__send--form {
-
-} */
 /* Cards */
 .card__container {
     background-color: white;
@@ -280,6 +266,79 @@ img.article__container__illustration {
 }
 .div__advertising a img {
     box-shadow: 0 0 3px rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+/* Contact form */
+.form {
+    background-color: #ECF0F7;
+    text-align: center;
+    padding: 40px 0;
+}
+/* .form img {
+ 
+} */
+.form__container {
+    padding: 20px 0;
+}
+.form__container__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.form__container__data input {
+    padding: 8px 4px;
+    outline: none;
+    width: 45%;
+}
+.form__container__data--margin {
+    margin-bottom: 10px;
+}
+.form__container__category {
+    margin-bottom: 15px;
+}
+.form__container__category select {
+    outline: none;
+    padding: 4px;
+}
+.form__container__message {
+    margin-bottom: 10px;
+}
+.form__container__message textarea {
+    outline: none;
+    padding: 4px;
+}
+.form__container--accept {
+    margin-bottom: 10px;
+}
+.form__container--accept button {
+    background-color: #b1b1b1;
+    color: white;
+    outline: none;
+    border-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.form__container__terms--line {
+    text-decoration: none;
+    color: #337E93;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.button__send--form {
+  margin-top: 12px;
+}
+.button__send--form button {
+    background-color: #486db7;
+    color: white;
+    outline: none;
+    border-style: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 4px;
     cursor: pointer;
 }
 /* footer */
@@ -418,6 +477,10 @@ img.article__container__illustration {
     }
     article.card__container:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+    /* form */
+    .button__send--form button {
+        padding: 15px;
     }
     /* footer */
     .footer__container__links ul li {
