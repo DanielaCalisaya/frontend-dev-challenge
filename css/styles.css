@@ -282,6 +282,25 @@ img.article__container__illustration {
     box-shadow: 0 0 3px rgba(0,0,0,0.9);
     cursor: pointer;
 }
+/* footer */
+.footer__container {
+    background-color: #265E6C;
+    padding: 30px 30px;
+}
+.footer__container__text {
+    padding-bottom: 15px;
+}
+.footer__container__text img {
+    margin: auto;
+}
+.footer__container__links {
+    text-align: center; 
+    padding-top: 15px;
+}
+.footer__container__links ul li {
+    list-style: none;
+    cursor: pointer;
+}
 
 /* MEDIA QUERY - 768 px */
 @media(min-width: 768px) {
