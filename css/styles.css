@@ -300,9 +300,9 @@ img.article__container__illustration {
     border: none;
 }
 .footer__container__links {
-    text-align: center; 
-    padding-top: 15px;
+    padding-top: 20px;
     color: white;
+    text-align: center;
 }
 .footer__container__links ul li {
     list-style: none;
@@ -393,10 +393,12 @@ img.article__container__illustration {
     }
     .footer__container__links ul {
         text-align: center;
+        justify-content: space-around;
+        width: 100%;
     }
     .footer__container__links ul li {
-        display: inline-block;
-        padding: 0 20px; 
+        display: flex;
+        padding: 0 20px;
     }
 
 }
