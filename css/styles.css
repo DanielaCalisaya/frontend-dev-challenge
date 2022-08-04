@@ -190,6 +190,9 @@ img.article__container__illustration {
 }
 
 /* Slideshow with testimonies */
+.slideshow {
+    margin-bottom: 30px;
+}
 .slideshow__container {
     max-width: 1000px;
     position: relative;
@@ -236,44 +239,7 @@ img.article__container__illustration {
     background-color: #b378ff;
     height: 300px;
 }
-
-/* Cards */
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 30px 0; 
-}
-.card__follow {
-    width: 90%;
-    max-width: 382.9px;
-    text-decoration: none;
-}
-.card__container {
-    padding-bottom: 20px; 
-    box-shadow: 0 0 3px rgba(0,0,0,0.9);
-}
-.card__container__img {
-    width: 100%;
-    max-width: 382.9px;
-}
-.card__container__text {
-    text-align: start;
-    color: #414141;
-    padding: 10px 7px 0px 7px;
-}
-.card__container__text--color {
-    text-transform: uppercase;
-    color: #f778b9;
-}
-.card__container__text--margin {
-    margin-bottom: 5px;
-}
 /* .button__send {
-
-    width: 263px;  263 en mobile estan bien
-    height: 202px; 202 
 
 }
 .button__send:hover {
@@ -287,6 +253,25 @@ img.article__container__illustration {
 .button__send--form {
 
 } */
+/* Cards */
+.card__container {
+    background-color: white;
+    margin-bottom: 10px;
+}
+.card__container__text {
+    font-family: 'Merriweather', serif;
+    padding: 15px;
+    text-align: start;
+    color: #414141;
+    padding: 10px 7px 30px 7px;
+}
+.card__container__text--color {
+    text-transform: uppercase;
+    color: #f778b9;
+}
+.card__container__text--margin {
+    margin-bottom: 5px;
+} 
 
 /* MEDIA QUERY - 768 px */
 @media(min-width: 768px) {
@@ -340,6 +325,37 @@ img.article__container__illustration {
     }
     .slideshow__container__slide__text {
         padding: 0 60px;
+    }
+    /* cards */
+    section.card {
+        display: flex;
+        /* flex-wrap: wrap; */
+        max-width: 49%;
+        display: inline-block;
+    }
+    article.card__container {
+        margin: auto;
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+}
+
+    @media (min-width: 1200px) {
+
+    /* Section cards */
+    section.card {
+        max-width: 24%;
+    }
+    article.card__container {
+        margin-right: 10px;
+    }
+    article.card__container { 
+        box-shadow: none; /* shadow in card*/
+        transition: box-shadow 500ms;
+    }
+    article.card__container:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
     }
 
 } 
