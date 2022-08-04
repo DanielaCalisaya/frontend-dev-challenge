@@ -272,6 +272,16 @@ img.article__container__illustration {
 .card__container__text--margin {
     margin-bottom: 5px;
 } 
+/* small advertising */
+.div__advertising {
+    padding: 30px 0px;
+    width: 90%;
+    margin: auto;
+}
+.div__advertising a img {
+    box-shadow: 0 0 3px rgba(0,0,0,0.9);
+    cursor: pointer;
+}
 
 /* MEDIA QUERY - 768 px */
 @media(min-width: 768px) {
@@ -337,6 +347,10 @@ img.article__container__illustration {
         margin: auto;
         margin-top: 20px;
         max-width: 80%;
+    }
+    /* small advertising */
+    .div__advertising {
+        width: 70%;
     }
 
 }
