@@ -1,0 +1,17 @@
+:root {
+    --color-indigo: #486db7; 
+    --color-pink: #f778b9; 
+    --color-purples: #b378ff; 
+    --color-lightBlue: #ECF0F7;
+    --color-grey: #7d7d7d;
+    --color-darkGrey: #414141;
+    --color-lightGreyOne: #f1f1f1;
+    --color-lightGreyTwo: #e4e4e4;
+    --color-lightGreyThree: #cacaca;
+    --color-lightGreyFour: #b1b1b1;
+    --color-oil: #265E6C;
+    --color-lightOil:#337E93;
+    --color-white: #ffffff;
+    --font-titles: 'Merriweather', serif;
+    --font-paragraphs: 'Source Sans Pro', sans-serif;
+}
