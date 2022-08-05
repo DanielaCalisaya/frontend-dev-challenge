@@ -541,6 +541,7 @@ img.article__container__illustration {
     padding: 50px 30px;
 }
 .footer__container__text {
+    font-family: var(--font-paragraphs);
     padding-bottom: 15px;
     color: white;
 }
@@ -553,6 +554,7 @@ img.article__container__illustration {
     border: none;
 }
 .footer__container__links {
+    font-family: var(--font-paragraphs);
     color: var(--color-white);
     padding-top: 20px;
     text-align: center;
@@ -658,7 +660,6 @@ img.article__container__illustration {
     }
     .footer__container__links ul li {
         display: flex;
-        padding: 0 20px;
     }
 
 }
@@ -695,8 +696,5 @@ img.article__container__illustration {
     .button__send--form button {
         padding: 15px;
     }
-    /* footer */
-    .footer__container__links ul li {
-        padding: 0 50px;  
-    }
+
 } 
