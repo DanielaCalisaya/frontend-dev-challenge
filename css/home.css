@@ -230,6 +230,7 @@
 .article {
     background-color:  var(--color-lightGreyTwo);
     justify-content: center;
+    padding: 60px 0;
 }
 .article__container__advertising {
     display: flex;
@@ -245,16 +246,15 @@
     cursor: pointer;
 }
 .article__container {
-    margin-bottom: 50px;  /*  */
     max-width: 700px;
 }
 .article__container__epigraph {
     background-color: var(--color-lightGreyOne);
     color: var(--color-darkGreyOne);
-    height: 30px;
+    height: auto;
     width: 100%;
     text-align: center;
-    padding-top: 5px;
+    padding: 8px;
 }
 /* FAQ accordion */
 .article__container__faq {
@@ -262,7 +262,7 @@
     margin-top: 20px;
     padding: 0 15px; 
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-darkGreyOne);
+    border-bottom: 3.5px dotted var(--color-darkGreyOne);
     cursor: pointer;
 }
 .article__container__faq__question {
@@ -665,7 +665,23 @@ img.article__container__illustration {
 }
 
     @media (min-width: 1008px) {
-        
+    /* advertisings */
+    .article__container__advertising a img {
+        opacity: 80%;
+        transition: opacity 300ms;
+    }
+    .article__container__advertising a img:hover {
+        opacity: 120%;
+    }
+    /* cards */
+    article.card__container { 
+        margin-right: 10px;
+        box-shadow: none; /* shadow in card*/
+        transition: box-shadow 500ms;
+    }
+    article.card__container:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }    
     /* modal */
     .modal__container--close {
         transition: background-color .4s; 
@@ -681,16 +697,6 @@ img.article__container__illustration {
     /* Section cards */
     section.card {
         max-width: 24%;
-    }
-    article.card__container {
-        margin-right: 10px;
-    }
-    article.card__container { 
-        box-shadow: none; /* shadow in card*/
-        transition: box-shadow 500ms;
-    }
-    article.card__container:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
     }
     /* form */
     .button__send--form button {
