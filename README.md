@@ -40,3 +40,12 @@ c. Como sugerencia: recomendamos crear una función de *alert* para enviar el fo
 1. Siete días (7 días) a partir del correo electrónico de envío del Desafío Tech. La fecha exacta está en el correo electrónico.
 2. Notificar en el correo electrónico la finalización y enviar solamente la url del repositorio para evaluación.
 3. Utilizar siempre en el correo electrónico la opción "Responder a todos".
+
+# -> Daniela Calisaya
+
+## Link  -> [Figma](https://www.figma.com/file/RYZaI3hC9JXbeOhlUbYKXS/Test?node-id=0%3A1)
+
+## Para ver este proyecto 
+          Click derecho sobre el archivo home.html
+
+          -> Mostrar en el explorador de archivos
