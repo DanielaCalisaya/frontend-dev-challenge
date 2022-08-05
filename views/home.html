@@ -27,9 +27,10 @@
 </head>
 
 <body>
-
+    <!-- Header -->
     <header class="header">
         
+        <!-- Icon hamburguer -->
         <div id="hamburger-container" onclick="dropMenu()">
             <div id="hamburger">
                 <button>
@@ -44,6 +45,7 @@
         
         <i class="header__icon far fa-search"></i>
 
+        <!-- Navigation burguer menu -->
         <nav class="header__nav" id="navigation-burguer-menu">
 
             <span class="header__nav__span">Embarazo</span>
@@ -66,15 +68,17 @@
 
     </header>
 
+    <!-- Section hero images with four images -->
     <section class="hero">
         <div class="hero__container">
-            <h1 class="hero__container--color">Su viaje de <span>salud emocional</span> comienza aquí</h1>
+            <h1>Su viaje de <span class="hero__container--color">salud emocional</span> comienza aquí</h1>
             <br>
             <h2 class="hero__container--fontSize">Conoce a nuestros profesionales con licencia</h2>
             <h3 class="hero__container--fonts">Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad</h3>
         </div>
     </section>
 
+    <!-- Section with image and paragraph --> 
     <section class="section">
         <div class="section__container">
             <img class="section__container__img" src="../images/trabajo.png" alt="Ilustración de trabajadores">
@@ -86,6 +90,7 @@
         </div>
     </section>
 
+    <!-- Article with image and faq accordion, includes advertisings -->
     <article class="article">
 
         <div class="article__container__advertising">
@@ -97,11 +102,14 @@
             <img src="../images/intermediatePhoto.png" alt="Foto de una mamá conversando con su hijita" width="100%"> 
             <div class="article__container__epigraph">Los padres pueden educar a sus hijos para que sean adultos responsables y maduros</div> 
             
+            <!-- FAQ accordion --> 
             <div class="article__container__faq">
+
                 <div class="article__container__faq__question">
                     <h4>¿Cuáles son los pasos para tomar una decisión?</h4>
                     <i class="fas fa-angle-down"></i>
                 </div>
+
                 <div class="article__container__faq__answer">
                     <h3>1. Asignarles tareas sencillas</h3>
                     <p>
@@ -127,6 +135,7 @@
         
     </article>
 
+    <!-- Slideshow with testimonies -->
     <section class="slideshow">
 
         <div class="slideshow__container">
@@ -135,7 +144,7 @@
                 <div class="slideshow__container__slide__text">
                     <i class="slideshow__container__slide__icon fas fa-quote-right"></i>
                     <br>
-                    1-Me gustaría agradecer al sitio, me ayudó de una manera inimaginable,
+                    Me gustaría agradecer al sitio, me ayudó de una manera inimaginable,
                     el psicólogo fue sumamente servicial y acogedor conmigo
                     y me siento mejor conmigo mismo.
                     <br>
@@ -148,12 +157,11 @@
                 <div class="slideshow__container__slide__text">
                     <i class="slideshow__container__slide__icon fas fa-quote-right"></i>
                     <br>
-                    2-Me gustaría agradecer al sitio, me ayudó de una manera inimaginable,
-                    el psicólogo fue sumamente servicial y acogedor conmigo
-                    y me siento mejor conmigo mismo. 
+                    Este sitio me ha ayudado un montón, siempre encuentro lo que busco,
+                    los profesionales que brindan ayuda dan justo en la tecla, muchas gracias!! 
                     <br>
                     <br>
-                    ~ Maria Montessori ~
+                    ~ Teresa Montesino ~
                 </div>
             </div>
   
@@ -161,12 +169,11 @@
                 <div class="slideshow__container__slide__text">
                     <i class="slideshow__container__slide__icon fas fa-quote-right"></i>
                     <br>
-                    3-Me gustaría agradecer al sitio, me ayudó de una manera inimaginable,
-                    el psicólogo fue sumamente servicial y acogedor conmigo
-                    y me siento mejor conmigo mismo. 
+                    Recomiendo mucho este sitio y los artículos que se muestran, me ayudó en mi vida personal, 
+                    la parte destinada a embarazadas me dió muchos consejos muy prácticos. 
                     <br>
                     <br>
-                    ~ Maria Montessori ~
+                    ~ Celeste Campos ~
                 </div>
             </div>
 
@@ -181,6 +188,7 @@
 
     </section>
 
+    <!-- Cards -->
     <section class="card">
         <article class="card__container">
             <img src="../images/card.jpg" width="100%" alt="Colapso mental">
@@ -225,15 +233,17 @@
         </article>
     </section>
 
+    <!-- Small advertising  -->
     <div class="div__advertising">
         <a href="https://youthcamp.es/" target="_blank"><img src="../images/YourCampSmall.png" alt="YourCamp" width="100%"></a>
     </div>
 
+    <!-- Contact form -->
     <section class="form">
         <img src="../images/message.png" alt="Ilustración de mensajes">
-        <h2>Suscríbete </h2>
+        <h2>Unite a nuestra gran comunidad!</h2>
 
-        <form action="" class="form__container">
+        <form action="" method="POST" class="form__container">
 
             <div class="form__container__data">
                 <input class="form__container__data--margin" type="name" placeholder="Inserte su nombre">
@@ -245,7 +255,9 @@
                 <select name="category" id="select">
                     <option value="Salud">Salud</option>
                     <option value="Educación">Educación</option>
-                    <option value="Otro">etc</option>
+                    <option value="Niñez">Niñez</option>
+                    <option value="Adolecencia">Adolecencia</option>
+                    <option value="Pareja">Pareja</option>
                 </select>
             </div>
 
@@ -273,6 +285,7 @@
 
     </section>
 
+    <!-- Section modal -->
     <section class="modal">
         <div class="modal__container">
             <img class="modal__container__img" src="../images/suporte.png" alt="Ilustración de soporte en línea">
@@ -282,10 +295,11 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer__container">
 
         <div class="footer__container__text">
-            <img src="../images/logoMcontigo.png" alt="Logo MContigo">
+            <a href="https://mcontigo.com/" target="_blank"><img src="../images/logoMcontigo.png" alt="Logo MContigo"></a>
             <br>
             <br>
             <p>
