@@ -1,3 +1,26 @@
+/* Menu hamburguer */
+const nav = document.querySelector('#hamburger button')
+
+nav.addEventListener('click', e => {
+    nav.classList.toggle('open'); 
+})
+
+
+/* Navegation */
+let navBar = document.querySelector("#navigation-burguer-menu"); 
+
+function dropMenu() {
+    let subcategoryMenu = document.querySelector(".active");
+    if (navBar.style.display === "block") {
+        navBar.style.display = "none";
+        subcategoryMenu?.classList.remove("active");
+    } else {
+        navBar.style.display = "block";
+        subcategoryMenu ? subcategoryMenu.classList.remove("active") : "";
+    }
+}
+
+
 /* FAQ accordion*/
 const openAndCloseAccordion = document.querySelector(".article__container__faq");
 

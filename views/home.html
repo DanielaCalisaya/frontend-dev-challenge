@@ -30,16 +30,45 @@
 
     <header class="header">
         
-        <i class="header__icon far fa-bars"></i>
+        <div id="hamburger-container" onclick="dropMenu()">
+            <div id="hamburger">
+                <button>
+                    <span class="top-line"></span>
+                    <span class="middle-line"></span>
+                    <span class="button-line"></span>
+                </button>
+            </div>
+        </div>
+
         <img class="header__img" src="../images/logoMejorConSalud.png" alt="logo Mejor con Salud" width="100%">
+        
         <i class="header__icon far fa-search"></i>
-        <!-- <i class="header__icon fal fa-times"></i> -->
+
+        <nav class="header__nav" id="navigation-burguer-menu">
+
+            <span class="header__nav__span">Embarazo</span>
+            <hr>
+            <div class="header__nav__container">
+                <div class="header__nav__container--div"><a href="">Quiero ser mamá</a><i class="fas fa-arrow-right"></i></div> 
+                <div class="header__nav__container--div"><a href="">Voy a ser mamá</a><i class="fas fa-arrow-right"></i></div>
+                <div class="header__nav__container--div"><a href="">Parto</a><i class="fas fa-arrow-right"></i></div>
+            </div>
+            
+            <span class="header__nav__span">Educación</span>
+            <hr>
+            <div class="header__nav__container">
+                <div class="header__nav__container--div"><a href="">Aprende a ser mamá</a><i class="fas fa-arrow-right"></i></div> 
+                <div class="header__nav__container--div"><a href="">Educación para bebés</a><i class="fas fa-arrow-right"></i></div> 
+                <div class="header__nav__container--div"><a href="">Educación para niños</a><i class="fas fa-arrow-right"></i></div> 
+            </div>
+
+        </nav> 
 
     </header>
 
     <section class="hero">
         <div class="hero__container">
-            <h1 class="hero__container--color">Su viaje  de <span>salud emocional</span> comienza aquí</h1>
+            <h1 class="hero__container--color">Su viaje de <span>salud emocional</span> comienza aquí</h1>
             <br>
             <h2 class="hero__container--fontSize">Conoce a nuestros profesionales con licencia</h2>
             <h3 class="hero__container--fonts">Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad</h3>
