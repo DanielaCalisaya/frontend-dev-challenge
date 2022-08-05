@@ -117,6 +117,7 @@
     z-index: 1; 
     position: absolute;
     width: 100%;
+    max-width: 1300px;
     margin-top: 335px;
     margin-left: 0;
     /* padding-left: 10px; */
