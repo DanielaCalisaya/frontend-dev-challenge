@@ -50,3 +50,19 @@ function showSlides() {
     dots[slideIndex-1].className += " act";
     setTimeout(showSlides, 5000); // Change text every 5 seconds
 }
+
+
+/* Modal */
+const openModal = document.querySelector(".button__send--subscribe");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".modal__container--close");
+
+openModal.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal.classList.add("modal--show")
+})
+
+closeModal.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal.classList.remove("modal--show")
+})
